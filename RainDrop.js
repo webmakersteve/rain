@@ -3,7 +3,7 @@ class RainDrop {
     this.xPos = random(0, width);
     this.yPos = random(0, height);
 
-    this.maxHeight = 75;
+    this.maxHeight = 45;
     this.minHeight = 25;
 
     this.maxWidth = 4;
@@ -13,6 +13,8 @@ class RainDrop {
     this.width = random(this.minWidth, this.minWidth);
 
     this.backgroundColor = backgroundColor;
+
+    this.components = ['droppable', 'collidable'];
   }
 
   fall(distance) {
